@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InMemory.Caching", "InMemor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Distributed.Caching", "Distributed.Caching\Distributed.Caching.csproj", "{450C8075-5C6D-4778-9B74-CC716DBCE654}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublisherExample", "PublisherExample\PublisherExample.csproj", "{1FB18B31-E203-48BA-BC8E-FC554419E076}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriberExample", "SubscriberExample\SubscriberExample.csproj", "{5E302375-309D-49FC-8726-E83020530045}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{450C8075-5C6D-4778-9B74-CC716DBCE654}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{450C8075-5C6D-4778-9B74-CC716DBCE654}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{450C8075-5C6D-4778-9B74-CC716DBCE654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FB18B31-E203-48BA-BC8E-FC554419E076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB18B31-E203-48BA-BC8E-FC554419E076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB18B31-E203-48BA-BC8E-FC554419E076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB18B31-E203-48BA-BC8E-FC554419E076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E302375-309D-49FC-8726-E83020530045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E302375-309D-49FC-8726-E83020530045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E302375-309D-49FC-8726-E83020530045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E302375-309D-49FC-8726-E83020530045}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
