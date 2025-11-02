@@ -16,13 +16,13 @@ namespace InMemory.Caching.Controllers
         }
 
         [HttpGet("set/{name}")]
-        public void Set(string name)
+        public void SetName(string name)
         {
-            _memoryCache.Set("name",name);
+            _memoryCache.Set("name", name);
         }
 
-        [HttpGet]
-        public string Get()
+        [HttpGet("name")]
+        public string GetName()
         {
             if (_memoryCache.TryGetValue<string>("name", out var name) && name != null)
             {
@@ -30,6 +30,22 @@ namespace InMemory.Caching.Controllers
             }
 
             return string.Empty;
+        }
+
+        [HttpGet("setDate")]
+        public void SetDate()
+        {
+            _memoryCache.Set<DateTime>("date", DateTime.Now, new MemoryCacheEntryOptions
+            {
+                AbsoluteExpiration = DateTime.Now.AddSeconds(30),
+                SlidingExpiration = TimeSpan.FromSeconds(5)
+            });
+        }
+
+        [HttpGet("getDate")]
+        public DateTime GetDate()
+        {
+            return _memoryCache.Get<DateTime>("date");
         }
     }
 }
